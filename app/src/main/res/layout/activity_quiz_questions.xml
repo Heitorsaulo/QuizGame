@@ -16,6 +16,7 @@
         android:padding="16dp">
 
         <TextView
+            android:id="@+id/tvQuestion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -53,6 +54,7 @@
                 android:progress="0"
                 />
             <TextView
+                android:id="@+id/tvProgress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -63,5 +65,66 @@
         </LinearLayout>
 
 
+        <TextView
+        android:id="@+id/tv_option_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textSize="18sp"
+        tools:text="Apple"
+        android:textColor="#7A8089"
+        android:background="@drawable/default_option_border_bg"
+        />
+
+        <TextView
+            android:id="@+id/tv_option_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="18sp"
+            tools:text="Apple"
+            android:textColor="#7A8089"
+            android:background="@drawable/default_option_border_bg"
+            />
+        <TextView
+            android:id="@+id/tv_option_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="18sp"
+            tools:text="Apple"
+            android:textColor="#7A8089"
+            android:background="@drawable/default_option_border_bg"
+            />
+        <TextView
+            android:id="@+id/tv_option_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="18sp"
+            tools:text="Apple"
+            android:textColor="#7A8089"
+            android:background="@drawable/default_option_border_bg"
+            />
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/design_default_color_primary"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
     </LinearLayout>
 </ScrollView>
