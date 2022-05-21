@@ -16,6 +16,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     private var mSelectedOptionPosition: Int = 0
     private var mUserName: String? = null
     private var mCorrectAnswers: Int = 0
+
     private var progressBar: ProgressBar? = null
     private var tvProgress: TextView? = null
     private var tvQuestion: TextView? = null
@@ -73,10 +74,10 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         tvOptionFour?.text = question.optionFour
 
         if (mCurrentPosition == mQuestionsList!!.size) {
-            btnSubmit?.text = "FINISH"
+            btnSubmit?.text = "TERMINAR"
 
         } else {
-            btnSubmit?.text = "SUBMIT"
+            btnSubmit?.text = "ENVIAR"
         }
 
     }
@@ -146,9 +147,10 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
             R.id.btnSubmit -> {
+                var btnEnabled:Int = 0
                 if(mSelectedOptionPosition == 0){
                     mCurrentPosition++
-
+                    btnEnabled = 1
                     when{
                         mCurrentPosition <= mQuestionsList!!.size -> {
                             setQuestion()
@@ -172,10 +174,28 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                 }
 
                 if (mCurrentPosition == mQuestionsList!!.size){
-                    btnSubmit?.text = "FINISH"
+                    btnSubmit?.text = "TERMINAR"
                 }else{
-                    btnSubmit?.text = "GO TO THE NEXT QUESTION"
+                    btnSubmit?.text = "IR PARA PROXIMA PERGUNTA"
                 }
+
+
+
+                if(btnEnabled == 0){
+                    tvOptionOne?.isEnabled = false
+                    tvOptionTwo?.isEnabled = false
+                    tvOptionThree?.isEnabled = false
+                    tvOptionFour?.isEnabled = false
+                }
+
+                if (btnEnabled == 1){
+                    tvOptionOne?.isEnabled = true
+                    tvOptionTwo?.isEnabled = true
+                    tvOptionThree?.isEnabled = true
+                    tvOptionFour?.isEnabled = true
+                }
+
+
                 mSelectedOptionPosition = 0
             }
 
@@ -211,4 +231,6 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 }
+
+
 
