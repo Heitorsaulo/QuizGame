@@ -32,7 +32,7 @@ object Constants {
             3, "A qual país essa bandeira pertence?",
             R.drawable.ic_flag_of_brazil,
             "Belarus", "Belize",
-            "Brunei", "Brazil", 4
+            "Brunei", "Brasil", 4
         )
 
         questionsList.add(que3)
@@ -41,7 +41,7 @@ object Constants {
         val que4 = Question(
             4, "A qual país essa bandeira pertence?",
             R.drawable.ic_flag_of_belgium,
-            "Bahamas", "Belgium",
+            "Bahamas", "Belgica",
             "Barbados", "Belize", 2
         )
 
@@ -51,8 +51,8 @@ object Constants {
         val que5 = Question(
             5, "A qual país essa bandeira pertence?",
             R.drawable.ic_flag_of_fiji,
-            "Gabon", "France",
-            "Fiji", "Finland", 3
+            "Gabon", "França",
+            "Fiji", "Finlandia", 3
         )
 
         questionsList.add(que5)
@@ -61,8 +61,8 @@ object Constants {
         val que6 = Question(
             6, "A qual país essa bandeira pertence?",
             R.drawable.ic_flag_of_germany,
-            "Germany", "Georgia",
-            "Greece", "none of these", 1
+            "Alemanha", "Georgia",
+            "Grecia", "none of these", 1
         )
 
         questionsList.add(que6)
@@ -71,8 +71,8 @@ object Constants {
         val que7 = Question(
             7, "A qual país essa bandeira pertence?",
             R.drawable.ic_flag_of_denmark,
-            "Dominica", "Egypt",
-            "Denmark", "Ethiopia", 3
+            "Dominica", "Egito",
+            "Dinamarca", "Etiopia", 3
         )
 
         questionsList.add(que7)
@@ -81,8 +81,8 @@ object Constants {
         val que8 = Question(
             8, "A qual país essa bandeira pertence?",
             R.drawable.ic_flag_of_india,
-            "Ireland", "Iran",
-            "Hungary", "India", 4
+            "Irlanda", "Irã",
+            "Hungria", "India", 4
         )
 
         questionsList.add(que8)
@@ -91,8 +91,8 @@ object Constants {
         val que9 = Question(
             9, "A qual país essa bandeira pertence?",
             R.drawable.ic_flag_of_new_zealand,
-            "Australia", "New Zealand",
-            "Tuvalu", "United States of America", 2
+            "Australia", "Nova Zelandia",
+            "Tuvalu", "EUA", 2
         )
 
         questionsList.add(que9)
@@ -102,7 +102,7 @@ object Constants {
             10, "A qual país essa bandeira pertence?",
             R.drawable.ic_flag_of_kuwait,
             "Kuwait", "Jordan",
-            "Sudan", "Palestine", 1
+            "Sudao", "Palestina", 1
         )
 
         questionsList.add(que10)
