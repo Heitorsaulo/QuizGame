@@ -7,4 +7,8 @@
     <string name="quiz_image">Quiz Image</string>
     <string name="_0_9">0/9</string>
     <string name="submit">SUBMIT</string>
+    <string name="result">Result</string>
+    <string name="image">image</string>
+    <string name="hey_congratulations">Hey, Congratulations!</string>
+    <string name="finish">FINISH</string>
 </resources>
