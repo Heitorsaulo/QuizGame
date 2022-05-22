@@ -147,10 +147,10 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
             R.id.btnSubmit -> {
-                var btnEnabled:Int = 0
+                var btnEnabled:Boolean = true
                 if(mSelectedOptionPosition == 0){
                     mCurrentPosition++
-                    btnEnabled = 1
+                    btnEnabled = false
                     when{
                         mCurrentPosition <= mQuestionsList!!.size -> {
                             setQuestion()
@@ -181,14 +181,14 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
 
 
-                if(btnEnabled == 0){
+                if(btnEnabled){
                     tvOptionOne?.isEnabled = false
                     tvOptionTwo?.isEnabled = false
                     tvOptionThree?.isEnabled = false
                     tvOptionFour?.isEnabled = false
                 }
 
-                if (btnEnabled == 1){
+                if (!btnEnabled){
                     tvOptionOne?.isEnabled = true
                     tvOptionTwo?.isEnabled = true
                     tvOptionThree?.isEnabled = true
