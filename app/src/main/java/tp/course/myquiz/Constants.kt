@@ -1,5 +1,8 @@
 package tp.course.myquiz
 
+import java.lang.Math.random
+
+
 object Constants {
 
     const val USER_NAME : String = "user_name"
@@ -8,6 +11,7 @@ object Constants {
 
     fun getQuestions():ArrayList<Question>{
         val questionsList = ArrayList<Question>()
+
 
         //1
         val que1 = Question(
@@ -95,7 +99,7 @@ object Constants {
             "Tuvalu", "EUA", 2
         )
 
-        questionsList.add(que9)
+
 
         // 10
         val que10 = Question(
@@ -105,8 +109,24 @@ object Constants {
             "Sudao", "Palestina", 1
         )
 
-        questionsList.add(que10)
 
+
+        val que11 = Question(11, "A qual país essa bandeira pertence?",
+            R.drawable.ic_flag_of_eslovenia,
+            "Eslovenia", "Latvia",
+            "Bahamas", "Colombia", 1)
+
+
+
+        questionsList.addAll(questionsList.shuffled().take((1..10).random()))
+
+
+
+        while (questionsList.count() >= 11) {
+            questionsList.removeAt(random().toInt())
+        }
         return questionsList
     }
 }
+
+

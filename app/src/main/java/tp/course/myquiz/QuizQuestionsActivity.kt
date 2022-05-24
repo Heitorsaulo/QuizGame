@@ -59,14 +59,15 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
-
     private fun setQuestion() {
+
+
 
         defaultOptionsView()
         val question: Question = mQuestionsList!![mCurrentPosition - 1]
         ivImage?.setImageResource(question.image)
         progressBar?.progress = mCurrentPosition
-        tvProgress?.text = "$mCurrentPosition / ${progressBar?.max}"
+        tvProgress?.text = "$mCurrentPosition / ${mQuestionsList!!.size}"
         tvQuestion?.text = question.question
         tvOptionOne?.text = question.optionOne
         tvOptionTwo?.text = question.optionTwo

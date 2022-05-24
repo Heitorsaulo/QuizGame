@@ -11,4 +11,6 @@ data class Question(
     val correctAnswer: Int
 
 
-)
+) {
+
+}
